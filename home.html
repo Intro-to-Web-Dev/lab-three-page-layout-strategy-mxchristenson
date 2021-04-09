@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MPLS Dogboarding </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="MPLS Dog Boarding">
+        <meta name="keywords" content="MPLS, Dog, Dog boarding">
+        <meta name="author" content="Max Christenson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap.css" rel="stylesheet">
+
+        <style>
+            #container {
+                display: grid;
+                height: 100vh;
+                width: 100vw;
+                grid-template-columns: 1fr 1fr 1fr ;
+                grid-template-rows: 105px auto 15% ;
+                grid-template-areas: "header header header"
+                                     "main main main"
+                                     "footer footer footer";
+                
+            }
+            #header_structor {
+                
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                grid-area: span;
+                
+            }
+            .img{
+                display:  block; 
+                width: 231px ;
+                height: 100px;
+                margin: auto;
+            }
+            header {
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+           
+            aside {
+                text-align: left;
+                float: left;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 3;
+                
+                
+            }
+            #flexcontainer{
+                grid-row-start: 2;
+                grid-row-end: 5;
+                grid-column-start: 1;
+                background-image: url(img/dog_bg.jpeg);
+                background-size: 100%;
+                grid-area: main;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            #about{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 325px;
+                height: 350px;
+               
+                padding: 10px;
+                margin-top: 4%;
+                margin-bottom: 4%;
+                margin-left: 2%;
+                margin-right: 2%;
+                background-color: #ffffffcf;
+                border-radius: 10px;
+            }
+            #price{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 325px;
+                height: 350px;
+               
+                padding: 10px;
+                margin-top: 12%;
+                margin-bottom: 4%;
+                margin-left: 2%;
+                margin-right: 2%;
+                background-color: #ffffffcf;
+                border-radius: 10px;
+                padding-top: 10px;
+            
+            }
+            #Hours
+            {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 3;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 325px;
+                height: 350px;
+                
+                padding: 10px;
+                margin-top: 12%;
+                margin-bottom: 4%;
+                margin-left: 2%;
+                margin-right: 2%;
+                background-color: #ffffffcf;
+                border-radius: 10px;
+            }
+            footer {
+                padding-top: 40px;
+                grid-row-start:3;
+                grid-column-start: 2;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+
+            <header id="header_structure">
+                <img class="img" src="img/mpls_dog_logo.png" alt="MPLS dog logo">
+            </header>
+
+            <main id="flexcontainer">
+              
+                <div>
+                <aside id="about">
+                    <h2>About Us</h2>
+                    <p>Quality dog care service - The luxury hotel for dogs!</p> 
+                </aside>
+                </div>
+            </main>    
+                
+
+                <aside id="price">
+                    
+                    <h2>Price</h2>
+                    <h3>Weekly Boarding</h3>
+                    <p>$425 - 7 days [24 hours from drop-off time] </p>
+                    <h3>Daily Rate: </h3>
+                    <p>$75 - 1 day [24 hours from drop-off time</p>
+                    
+                    
+                </aside>
+                
+                <aside id="Hours">
+                    <h2>Hours of Operation</h2>
+                    <ul>
+                        <li>Monday: - 7am - 6pm</li>
+                        <li>Tuesday: - 7am - 6pm</li>
+                        <li>Wednesday: - 7am - 6pm</li>
+                        <li>Thursday: 7am - 6pm</li>
+                        <li>Friday:</li>
+                    </ul>
+                </aside>
+            <footer>
+                <div id="copyright">	&#169;  2019 - 2023 MPLS Dogboarding</div>
+            </footer>
+        </div>
+    </body>
+</html>
